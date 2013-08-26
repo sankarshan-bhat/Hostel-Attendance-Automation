@@ -1,0 +1,1 @@
+UPDATE  `finalattendance` SET value="0"

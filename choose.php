@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Your description goes here" />
+	<meta name="keywords" content="your,keywords,goes,here" />
+	<meta name="author" content="Your Name" />
+	<link rel="stylesheet" type="text/css" href="variant-stream.css" title="Variant Stream" media="screen,projection" />
+	<title>Student Option</title>
+</head>
+
+
+<body>
+<div id="wrap">
+
+	<div id="header">
+		<div id="topmenu">
+			<p>
+			<strong class="hide">Main menu:</strong>
+			<a class="active" href="Home.html"> Home</a><span class="hide"> | </span>
+			<a href="Student.html">Student</a><span class="hide"> | </span>
+			<a href="Admin.html">Admin</a><span class="hide"> | </span>
+			<a href="Contact.html">Contact</a>
+			</p>
+		</div>
+		
+		<div id="title">
+			<h1><a href="index.html">PESIT Boys Hostel</a></h1>
+			<p class="slogan">A home away from home.</p>
+		</div>
+	</div>
+		
+	
+</div>
+
+
+<?php
+session_start();
+if(!$_SESSION['is_logged_in']){
+header("location:Home.html");
+session_destroy();
+
+}
+
+echo '<h4 style="font:20px bold arial;"><p align="right"><a href="logout.php"> logout!</a></p></h2>';
+$username=$_GET["username"];
+$_SESSION['user']=$username;
+
+
+
+$user = urlencode($username);
+
+
+
+echo'<h2 style="font:40px arial,sans-serif;color:blue;"> <a href="timeat2.php?user=', $user, '"><span style="color:blue;font:40px arial,sans-serif;">Submit Attendance for the day</span></a><br></h2>';
+
+echo'<h2 style="font:40px arial,sans-serif;color:blue;"> <a href="timelg.php?user=', $user, '"><span style="color:#F2E85C;font:40px arial,sans-serif;">Take LG </span></a><br></h2>';
+
+echo'<h2 style="font:40px arial,sans-serif;color:blue;"> <a href="changeinfo.html?user=', $user, '"><span style="color:#F53D54;font:40px arial,sans-serif;">Change Contact Information</span></a><br></h2>';
+
+?>
+
+</body>
+</html>

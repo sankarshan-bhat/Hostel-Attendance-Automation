@@ -1,0 +1,49 @@
+
+ PES BOYS HOSTEL (the top rectangle i  blue color should be common to all pages)
+  
+
+
+1.main.html
+
+2.student_login.html->design login part add forgot password also style text field also add boarder nad alll...
+
+3.timelg.php ->make that message..proper style the message
+
+                     Here you have to option either print message like success or faliure in that page only at the bottom(preferrred use CSS (display:none;)first hide the display on condition check make  (display:block;) or as i made use seperate page for displaying message make sure that you designed properly..to cover entire page add some stuffs..to cover that page
+
+4.timeat.php->make that message..proper style the message  
+
+5.authority_login ->design login part add forgot password also style text field also add boarder 
+
+6.lg.html->design  all text box fielsds and names
+
+7.choose.php->it has 4 links..design that to cover entire page..
+
+ 
+8.sucess.php-> design buttons...
+
+9.updatedb2.php->design the  message..
+
+10.checkabsent.php->it has 3 butons..design that either put a link or button(i have put the button).....
+
+11.absentlist.hp ->design table conating usn name block room no
+
+
+12.Lglist.hp->design table conating usn name block room no
+
+13.changestudent.html(for authority to change student detail) ->design entire form...address block roomno....
+
+
+14.changeinfo.html(student can change his detail)
+
+
+15.lgupdate.php->design the  message..
+
+alos design/add logout button/link in suitable page... 
+
+
+
+
+
+
+ 

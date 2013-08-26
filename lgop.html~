@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Your description goes here" />
+	<meta name="keywords" content="your,keywords,goes,here" />
+	<meta name="author" content="Your Name" />
+	<link rel="stylesheet" type="text/css" href="variant-stream.css" title="Variant Stream" media="screen,projection" />
+	<title>PESIT Boys Hostel</title>
+
+
+
+<script type="text/javascript">
+function generateblock() {
+var d=document.getElementById("div");
+d.innerHTML+="<p>Enter block</p><form  method='post' action='blockwiselg.php' ><input type='text' name='block'><input type='submit' name='sub' value='submit'>";
+}
+
+
+function generateday() {
+var d=document.getElementById("divda");
+d.innerHTML+="<p>Enter date for which you want absentees</p><form  method='post' action='dayabsentlg.php' ><input type='text' name='day'><input type='submit' name='sub' value='submit'>";
+}
+
+function generatebox() 
+{
+var d=document.getElementById("divd");
+d.innerHTML+="<p>Enter startingbit date </p><form  method='post' action='datewiselg.php' ><input type='text' name='sdate'><p>Enter ending date</p><input type='text' name='edate'><input type='submit' name='sub' value='submit'>";
+}
+
+
+</script> 
+
+
+
+</head>
+
+
+<body>
+<div id="wrap">
+
+	<div id="header">
+		<div id="topmenu">
+			<p>
+			<strong class="hide">Main menu:</strong>
+			<a class="active" href="Home.html"> Home</a><span class="hide"> | </span>
+			<a href="Student.html">Student</a><span class="hide"> | </span>
+			<a href="Admin.html">Admin</a><span class="hide"> | </span>
+			<a href="Contact.html">Contact</a>
+			</p>
+		</div>
+		
+		<div id="title">
+			<h1><a href="index.html">PESIT Boys Hostel</a></h1>
+			<p class="slogan">A home away from home.</p>
+		</div>
+	</div>
+		
+	
+	
+		
+             	
+		
+	<p style="font:20px bold arial;" align='right'><a href='logout.php'> logout!</a></p>	         
+
+	
+
+</div>
+
+<p style="color:blue;font:30px bold arial"><span style="color:red;font:40px arial,sans-serif;">Click here to check who has taken LG today</span><br /></p>
+
+<p><a href="Lglist.php?user=', $user, '"><input type="button" style="height: 25px;color:red; width: 150px"  value="Today's LG students"/></p></a>
+
+
+<p style="color:blue;font:30px bold arial"><span style="color:red;font:40px arial,sans-serif;">Click here to check all LG students</span><br /></p>
+
+<p><a href="allLg.php?user=', $user, '"><input type="button" style="height: 25px;color:red; width: 150px"  value="All LG students"/></a></p>
+
+<p style="color:blue;font:30px bold arial"><span style="color:red;font:40px arial,sans-serif;">Click here to get particular day LG student</span><br /></p>
+
+<p><input type="button" style="height: 25px;color:red; width: 200px" onclick="generateday()" value="Get absentees for a certain date"/></p>
+<div id="divda"></div>
+
+<p style="color:blue;font:30px bold arial"><span style="color:red;font:40px arial,sans-serif;">Click here to get block wise LG students</span><br /></p>
+
+<p><input type="button" style="height: 25px;color:red; width: 200px" onclick="generateblock()" value="Get block wise LG students"/></p>
+<div id="div"></div>
+
+<p style="color:blue;font:30px bold arial"><span style="color:red;font:40px arial,sans-serif;">Click here to check LG students  between two dates</span><br /></p>
+ 
+<p><input type="button" style="height: 25px;color:red; width: 220px" onclick="generatebox()" value="Get LG students between two dates"/></p></a>';
+
+<div id="divd"></div>
+
+
+</body>
+</html>
+
+
+
+
+

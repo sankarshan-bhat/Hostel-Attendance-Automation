@@ -1,0 +1,16 @@
+(1.2)is there any formation of group?
+(2.4)There may be limitations on the deployment server’s Hardware support.
+(3.5)Privacy of data entered into the software 
+(3.5)The system should able to process 200 transactions concurrently.(not possible always)
+Maintainability - Flexiblity to accommodate new requirements will be a big problem.
+one good point- A student’s profile is only visible to the faculty advisor. Other students won’t be able to see or access them.
+(3.7)The software will need a good server to host it without problems in handling heavy traffic.But if server does not support , is there any alternative design to reduce the traffic density?
+difficulty in maintainance of database 
+(3.5)The System shall have a minimum uptime of 99 % excluding time pre-scheduled for maintenance and/or upgrades.
+
+
+
+
+
+
+
